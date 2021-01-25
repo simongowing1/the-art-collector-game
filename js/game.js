@@ -9,12 +9,13 @@ class Game {
     }
     
     preload() {
-        this.backgroundImage = loadImage('assets/empty_gallery_long.jpg');
+        this.backgroundImage = [
+            { src:loadImage('assets/empty_gallery_long.jpg'), x: 0, speed: 1.5}
+        ]
     }
     
     draw() {
-        console.log('drawing')
-        //this.background.draw();
+        this.background.draw();
     }
 }
 

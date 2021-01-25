@@ -5,10 +5,17 @@ function preload() {
 }
 
 function setup() {
-    createCanvas (1000,400)
+    createCanvas (1000,550)
     game.setup();
 }
 
 function draw() {
     game.draw();
 }
+
+function keyPressed() {
+    // if the spacebar is pressed
+    if (keyCode === 32) {
+        game.player.jump();
+    }
+} 

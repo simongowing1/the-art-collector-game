@@ -1,6 +1,7 @@
 class Game {
-    constructor(){
+    constructor() {
         this.backgroundImage;
+        this.tokenImage;
 
     }
     setup() {
@@ -13,6 +14,7 @@ class Game {
             { src:loadImage('assets/empty_gallery_long.jpg'), x: 0, speed: 1.5}
         ]
         this.playerImage = loadImage('assets/Player1.png');
+        this.tokenImage = loadImage('assets/token1.png');
     }
     
     draw() {

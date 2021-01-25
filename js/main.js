@@ -14,7 +14,6 @@ function draw() {
 }
 
 function keyPressed() {
-    // if the spacebar is pressed
     if (keyCode === 32) {
         game.player.jump();
     }

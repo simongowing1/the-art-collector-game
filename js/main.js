@@ -1,10 +1,12 @@
 const game = new Game();
+let song;
 
 function preload() {
     game.preload();
 }
 
 function setup() {
+   //  song = loadSound('assets/01 Windowlicker.mp3');
     createCanvas (1000,550)
     game.setup();
 }

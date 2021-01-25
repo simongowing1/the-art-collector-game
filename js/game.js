@@ -7,6 +7,7 @@ class Game {
     setup() {
         this.background = new Background();
         this.player = new Player();
+        this.tokens = [];
     }
     
     preload() {
@@ -15,11 +16,39 @@ class Game {
         ]
         this.playerImage = loadImage('assets/Player1.png');
         this.tokenImage = loadImage('assets/token1.png');
+        //loadSound('assets/01 Windowlicker.mp3')
     }
     
     draw() {
+        clear(); 
         this.background.draw();
+        
+        //console.log('hello')
+        if (frameCount === 50 || frameCount % 500 === 0) {
+            this.tokens.push(new Token(this.tokenImage))
+            //console.log('now');
+        }
+
+        this.tokens.forEach(function (token) {
+            token.draw();
+        })
+
+        this.tokens = this.tokens.filter(
+            (token) => {
+                if (token.collision(this.player))
+                {
+                    console.log('got it!');
+                    return false
+                } else if (token.x < 0 - token.width) {
+                    console.log('too slow!')
+                    return false
+                } else {
+                    return true
+                }
+            })
         this.player.draw();
-    }
+
+        
 }
 
+}

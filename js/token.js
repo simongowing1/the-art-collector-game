@@ -1,13 +1,34 @@
 class Token {
-    constructor(){
-        this.x = width - this.width;
-        this.y = (Math.random() * height)
-        this.width = 400;
-        this.height = 200;
+    constructor(image){
+        this.image = image;
+        this.x = WIDTH
+       this.width;
+        this.y = (Math.random() * 600) / 2.5 
+        this.width = 150;
+        this.height = 120;
     }
 
     draw() {
-        image(this.image, this.x, this.y, this.width, this.height)
+        this.x--;
+        image(game.tokenImage, this.x, this.y, this.width, this.height)
+    }
+    collision(playerInfo) {
+        // get the middle of the coin
+        let tokenMiddleX = this.x + this.width / 2;
+        let tokenMiddleY = this.y + this.height / 2;
+        // get the middle of the player
+        let playerX = playerInfo.x + playerInfo.width / 2;
+        let playerY = playerInfo.y;
+        // use p5 dist() function to measure distance between two objects
+        if (dist(tokenMiddleX, tokenMiddleY, playerX, playerY) > 25) {
+            return false
+        } else {
+            // collision was detected
+            game.player.score += 10;
+            //console.log('collision', playerInfo);
+            return true  
+        }
+
     }
 
 }

@@ -1,11 +1,12 @@
 class Player {
     constructor() {
-        this.height = 180;
-        this.width = 120;
+        this.height = 200;
+        this.width = 140;
         this.velocity = 0;
         this.gravity = 0.1;
         this.x = 50;
         this.y = height - (this.height + 20);
+        this.score = 0;
     }
 
     jump() {

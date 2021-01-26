@@ -21,10 +21,10 @@ class Game {
         this.tokenImage1 = loadImage('assets/token1.png');
         this.tokenImage2 = loadImage('assets/token2.png');
         this.tokenImage3 = loadImage('assets/token3.png');
-        this.obstacleImage = loadImage('assets/Obstacle1.png')
-        this.backgroundMusic = createAudio('assets/01 Windowlicker.mp3')
-        this.jumpSound = createAudio('assets/jump.mp3')
-        this.saleSound = createAudio('assets/Sale.m4a')
+        this.obstacleImage = loadImage('assets/Obstacle1.png');
+        this.backgroundMusic = createAudio('assets/01 Windowlicker.mp3');
+        this.jumpSound = createAudio('assets/jump.mp3');
+        this.saleSound = createAudio('assets/Sale.m4a');
         this.breakingSound = createAudio('assets/breaking.m4a')
     }
     
@@ -33,7 +33,7 @@ class Game {
         this.background.draw();
         //console.log('hello')
         if (frameCount === 10 || frameCount % 500 === 0) {
-            this.tokens.push(new Token(this.tokenImage1))
+            this.tokens.push(new Token(this.tokenImage))
             //console.log('now');
         }
 

@@ -3,7 +3,7 @@ let song;
 
 function preload() {
     game.preload();
-    // game.backgroundMusic.play();
+    game.backgroundMusic.play();
 }
 
 function setup() {

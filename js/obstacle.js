@@ -25,7 +25,7 @@ class Obstacle {
             return false
         } else {
            // console.log('collision')
-           game.breakingSound.play(); 
+        game.breakingSound.play(); 
            game.player.score -= 7;
           //  scoreboard.addName += "pointsAdded";
             playerScore.innerHTML = `Collection Value: $${game.player.score},000,000`

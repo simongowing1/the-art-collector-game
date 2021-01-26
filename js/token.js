@@ -9,7 +9,10 @@ class Token {
 
     draw() {
         this.x--;
-        image(game.tokenImage, this.x, this.y, this.width, this.height)
+        image(game.tokenImage1, this.x, this.y, this.width, this.height)
+        //image(game.tokenImage2, this.x, this.y, this.width, this.height)
+        //image(game.tokenImage3, this.x, this.y, this.width, this.height)
+
     }
     
     collision(playerInfo) {

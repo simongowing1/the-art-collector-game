@@ -18,7 +18,9 @@ class Game {
         ]
         this.playerImage = loadImage('assets/Player1-frnt.png');
         this.playerImageBk = loadImage('assets/Player1_bk.png');
-        this.tokenImage = loadImage('assets/token1.png');
+        this.tokenImage1 = loadImage('assets/token1.png');
+        this.tokenImage2 = loadImage('assets/token2.png');
+        this.tokenImage3 = loadImage('assets/token3.png');
         this.obstacleImage = loadImage('assets/Obstacle1.png')
         this.backgroundMusic = createAudio('assets/01 Windowlicker.mp3')
         this.jumpSound = createAudio('assets/jump.mp3')
@@ -31,9 +33,13 @@ class Game {
         this.background.draw();
         //console.log('hello')
         if (frameCount === 10 || frameCount % 500 === 0) {
-            this.tokens.push(new Token(this.tokenImage))
+            this.tokens.push(new Token(this.tokenImage1))
             //console.log('now');
         }
+
+        // if (frameCount % 1200 === 0) {
+        //    this.tokens.push(new Token(this.tokenImage2))
+        //}
 
         this.tokens.forEach(function (token) {
             token.draw();
@@ -46,12 +52,6 @@ class Game {
                     console.log('got it!');
                     return false
                 } else if (token.x < 0 - token.width) {
-                    
-                    //Remove score if painting isn't collected:
-                    //console.log('should debit $10,000,000 from value when painting is missed')
-                    //this.player.score -= 10
-                    //playerScore.innerHTML = `Value: $${game.player.score},000,000`
-
                     return false
                 } else {
                     return true

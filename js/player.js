@@ -7,15 +7,25 @@ class Player {
         this.x = 50;
         this.y = height - (this.height + 20);
         this.score = 0;
+        this.image; 
     }
 
     jump() {
-        console.log('jumping');
+       // console.log('jumping');
         this.velocity = - 8
     }
 
-    scorePoint() {
-        
+    moveForward() {
+       // console.log('move forward')
+        if(this.x < WIDTH - this.width) {
+            this.x +=5
+        }
+    }
+
+    moveBack() {
+        if (this.x > 0) {
+            this.x -= 5;
+        }    
     }
 
     draw() {
@@ -32,5 +42,27 @@ class Player {
 
         image(game.playerImage, this.x, this.y, this.width, this.height);
 
+     //   if (this.moveBack()){
+     //       image(game.playerImageBk, this.x, this.y, this.width, this.height);
+     //   }
     } 
 }
+
+/*
+if (keyIsDown(UP_ARROW)) {
+    this.moveUp();
+    this.image = this.playerImageUp
+  }
+  if (keyIsDown(DOWN_ARROW)) {
+    this.moveDown();
+    this.image = this.playerImageDown
+  }
+  if (keyIsDown(LEFT_ARROW)) {
+    this.moveLeft();
+    this.image = this.playerImageLeft
+  }
+  if (keyIsDown(RIGHT_ARROW)) {
+    this.moveRight();
+    this.image = this.playerImageRight
+}
+*/

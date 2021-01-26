@@ -3,10 +3,10 @@ let song;
 
 function preload() {
     game.preload();
+    // game.backgroundMusic.play();
 }
 
 function setup() {
-   //  song = loadSound('assets/01 Windowlicker.mp3');
     createCanvas (1000,550)
     game.setup();   
 }
@@ -19,6 +19,17 @@ function draw() {
 function keyPressed() {
     if (keyCode === 32) {
         game.player.jump();
+        game.jumpSound.play();
+
+    }
+
+    if (keyCode === 39) {
+        game.player.moveForward();
+    }
+
+    if (keyCode === 37) {
+        game.player.moveBack();
+        game.player.image = game.playerImageBk   
     }
 } 
 

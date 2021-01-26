@@ -13,9 +13,12 @@ function timeIt(){
         counter++;
         countdown.innerHTML = `Countdown: ${secondsToMinutes(remainingTime - counter)}`;
         if (counter == remainingTime) {
-            alert(`TIMES UP! Congratulations, you have built a collection worth $${game.player.score},000,000!`);
             clearInterval(interval);
+            if (game.player.score >= 25){
+                alert(`TIMES UP! Congratulations, you have built a collection worth $${game.player.score},000,000!`);
+            } else { alert(`TIMES UP! Better luck next time`)}
         } 
+        
        
     }
 

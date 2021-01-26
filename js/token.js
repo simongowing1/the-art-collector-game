@@ -13,6 +13,7 @@ class Token {
         image(game.tokenImage, this.x, this.y, this.width, this.height)
     }
     collision(playerInfo) {
+        let playerScore = document.getElementById("scoreboard")
         // get the middle of the coin
         let tokenMiddleX = this.x + this.width / 2;
         let tokenMiddleY = this.y + this.height / 2;
@@ -25,6 +26,7 @@ class Token {
         } else {
             // collision was detected
             game.player.score += 10;
+            playerScore.innerHTML = `Value: $${game.player.score},000,000`
             //console.log('collision', playerInfo);
             return true  
         }

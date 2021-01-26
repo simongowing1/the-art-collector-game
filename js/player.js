@@ -14,6 +14,10 @@ class Player {
         this.velocity = - 8
     }
 
+    scorePoint() {
+        
+    }
+
     draw() {
         this.velocity += this.gravity; 
         this.y += this.velocity;

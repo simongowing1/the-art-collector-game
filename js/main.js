@@ -8,11 +8,12 @@ function preload() {
 function setup() {
    //  song = loadSound('assets/01 Windowlicker.mp3');
     createCanvas (1000,550)
-    game.setup();
+    game.setup();   
 }
 
 function draw() {
     game.draw();
+   
 }
 
 function keyPressed() {
@@ -20,3 +21,12 @@ function keyPressed() {
         game.player.jump();
     }
 } 
+
+
+
+
+//window.onload = function () {
+   // var oneMinute = 60,
+   //     display = document.getElementsByClassName("countdown");
+    
+//};

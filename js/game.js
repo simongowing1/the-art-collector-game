@@ -2,6 +2,7 @@ class Game {
     constructor() {
         this.backgroundImage;
         this.tokenImage;
+        this.music;
 
     }
     setup() {
@@ -16,7 +17,7 @@ class Game {
         ]
         this.playerImage = loadImage('assets/Player1.png');
         this.tokenImage = loadImage('assets/token1.png');
-        //loadSound('assets/01 Windowlicker.mp3')
+       // this.music = loadSound('assets/01 Windowlicker.mp3')
     }
     
     draw() {

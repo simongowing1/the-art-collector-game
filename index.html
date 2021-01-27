@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="shortcut icon" href="#">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <title>the art collector game</title>
   </head>
@@ -16,24 +17,29 @@
         <p>Collect ALL the art... as fast as you can!</p>
         <p>Add value to your collection by buying the paintings. <br>
           But make sure you don't knock over the sculptures!</p>
+        <p>Press enter to start!</p>
         <p>Spacebar = jump, stay up <br>
           Forward arrow = walk forward <br>
-          Reverse arrow = walk backward
+          Reverse arrow = walk backward <br>
         </p>
-        <div>
-          <p id="scoreboard">Collection Value: $0.00</p>
+        <div class="scoreboard">
+          <p id="score">Collection Value: $0.00</p>
           <p id="countdown">Countdown: 00:00</p>
         </div>
       </div>
+      <div id="canvas" class ="hidden"></div>
       <div>
+        <script src="./js/constants.js"></script>
         <script src="./js/countdown.js"></script>   
         <script src="./js/obstacle.js"></script>
         <script src="./js/token.js"></script>
         <script src="./js/background.js"></script>
         <script src="./js/player.js"></script>
         <script src="./js/game.js" ></script>
-        <script src="./js/constants.js"></script>
         <script src="./js/main.js" ></script>
+      </div>
+      <div class="timesup hidden">
+        <h2 id="finalScoreboard">Collection Value: $0.00</h2>
       </div>
     
   </body>

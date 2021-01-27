@@ -2,11 +2,12 @@ const game = new Game();
 
 function preload() {
     game.preload();
-    //game.backgroundMusic.play();
+    
 }
 
 function setup() {
-        createCanvas (1000,550);
+    let canvas = createCanvas(WIDTH, HEIGHT);
+    canvas.parent("canvas");
         game.setup();
        
 }
@@ -18,9 +19,11 @@ function draw() {
 
 function keyPressed() {
     if (keyCode === 32) {
-        game.player.jump();
-        game.jumpSound.play();
-
+        if (countdown.innerHTML !== 'Countdown: 00:00'){
+            game.player.jump();
+            game.jumpSound.play();
+        }
+        
     }
 
     if (keyCode === 39) {
@@ -34,7 +37,18 @@ function keyPressed() {
     }
 
     if (keyCode === 13) {
-        game.countdown.timeIt();
+        let timesupHtml = document.querySelector(".timesup");
+        let interval = setInterval(timeIt, 1000);
+
+       if (timesupHtml.classList.contains("hidden")){
+            canvasHtml.classList.remove("hidden");
+            game.backgroundMusic.play();     
+       }
+    
+    if (keyCode === 27) {
+        window.location.reload()
+    }
+
     }
 
     

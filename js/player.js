@@ -3,7 +3,7 @@ class Player {
         this.height = 200;
         this.width = 140;
         this.velocity = 0;
-        this.gravity = 0.1;
+        this.gravity = 0.2;
         this.x = 50;
         this.y = height - (this.height + 20);
         this.score = 0;
@@ -12,7 +12,7 @@ class Player {
 
     jump() {
        // console.log('jumping');
-        this.velocity = - 8
+        this.velocity = - 12
     }
 
     moveForward() {

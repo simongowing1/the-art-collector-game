@@ -15,7 +15,7 @@ class Obstacle {
 
     collision(playerInfo) {
         //console.log(playerInfo.y)
-        let playerScore = document.getElementById("scoreboard")
+        let playerScore = document.getElementById("score")
         let obstacleMiddleX = this.x + this.width / 2;
         let obstacleMiddleY = this.y + this.height / 2;
         let playerX = playerInfo.x + playerInfo.width / 2;
@@ -25,11 +25,14 @@ class Obstacle {
             return false
         } else {
            // console.log('collision')
-        game.breakingSound.play(); 
+           if (countdown.innerHTML !== 'Countdown: 00:00'){
+            game.breakingSound.play(); 
            game.player.score -= 7;
-          //  scoreboard.addName += "pointsAdded";
+          //  playerScore.addName += "pointsAdded";
             playerScore.innerHTML = `Collection Value: $${game.player.score},000,000`
-            return true  
+            return true 
+        }
+            
         }
 
     }

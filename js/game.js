@@ -35,6 +35,9 @@ class Game {
         if (frameCount === 10 || frameCount % 500 === 0) {
             this.tokens.push(new Token(this.tokenImage1))
             //console.log('now');
+        } else if (frameCount === 100) {
+            this.tokens.push(new Token(this.tokenImage2))
+            //console.log('now');
         }
 
         // if (frameCount % 1200 === 0) {

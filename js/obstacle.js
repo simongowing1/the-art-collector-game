@@ -20,7 +20,7 @@ class Obstacle {
         let playerX = playerInfo.x + playerInfo.width / 2;
         let playerY = playerInfo.y + playerInfo.height / 2;
         //let scoreboard = document.getElementById("scoreboard")
-        if (dist(obstacleMiddleX, obstacleMiddleY, playerX, playerY) > 25) {
+        if (dist(obstacleMiddleX, obstacleMiddleY, playerX, playerY) > this.width -10) {
             
             return false
         } else {

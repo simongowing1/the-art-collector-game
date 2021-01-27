@@ -33,7 +33,7 @@ class Game {
         this.background.draw();
         //console.log('hello')
         if (frameCount === 10 || frameCount % 500 === 0) {
-            this.tokens.push(new Token(this.tokenImage))
+            this.tokens.push(new Token(this.tokenImage1))
             //console.log('now');
         }
 

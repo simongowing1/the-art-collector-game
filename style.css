@@ -7,6 +7,10 @@ body{
     align-items: center;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .pointsAdded {
     color: green
 }

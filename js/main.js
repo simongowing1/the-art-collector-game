@@ -1,14 +1,14 @@
 const game = new Game();
-let song;
 
 function preload() {
     game.preload();
-    game.backgroundMusic.play();
+    //game.backgroundMusic.play();
 }
 
 function setup() {
-    createCanvas (1000,550)
-    game.setup();   
+        createCanvas (1000,550);
+        game.setup();
+       
 }
 
 function draw() {
@@ -25,12 +25,20 @@ function keyPressed() {
 
     if (keyCode === 39) {
         game.player.moveForward();
+        game.player.image = game.playerImage
     }
 
     if (keyCode === 37) {
         game.player.moveBack();
         game.player.image = game.playerImageBk   
     }
+
+    if (keyCode === 13) {
+        game.countdown.timeIt();
+    }
+
+    
+
 } 
 
 

@@ -7,7 +7,7 @@ class Player {
         this.x = 50;
         this.y = height - (this.height + 20);
         this.score = 0;
-        this.image; 
+        this.image = game.playerImage; 
     }
 
     jump() {
@@ -40,7 +40,7 @@ class Player {
             this.velocity = 0;
         }
 
-        image(game.playerImage, this.x, this.y, this.width, this.height);
+        image(this.image, this.x, this.y, this.width, this.height);
 
      //   if (this.moveBack()){
      //       image(game.playerImageBk, this.x, this.y, this.width, this.height);

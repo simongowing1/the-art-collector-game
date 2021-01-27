@@ -20,7 +20,7 @@ class Token {
         let tokenMiddleX = this.x + this.width / 2;
         let tokenMiddleY = this.y + this.height / 2;
         let playerX = playerInfo.x + playerInfo.width / 2;
-        let playerY = playerInfo.y;
+        let playerY = playerInfo.y + playerInfo.height / 3;
         let scoreboard = document.getElementById("scoreboard")
         if (dist(tokenMiddleX, tokenMiddleY, playerX, playerY) > this.height / 2) {
             

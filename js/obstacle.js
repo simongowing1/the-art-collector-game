@@ -4,12 +4,13 @@ class Obstacle {
         this.width = 130;
         this.x = WIDTH;
         this.y = 300;
+        this.image = game.obstacleImage;
     }
     
     draw(){
         
         this.x--;
-        image(game.obstacleImage, this.x, this.y, this.width, this.height)
+        image(this.image, this.x, this.y, this.width, this.height)
     }
 
     collision(playerInfo) {
@@ -20,8 +21,7 @@ class Obstacle {
         let playerX = playerInfo.x + playerInfo.width / 2;
         let playerY = playerInfo.y + playerInfo.height / 2;
         //let scoreboard = document.getElementById("scoreboard")
-        if (dist(obstacleMiddleX, obstacleMiddleY, playerX, playerY) > this.width -10) {
-            
+        if (dist(obstacleMiddleX, obstacleMiddleY, playerX, playerY) > this.width) {
             return false
         } else {
            // console.log('collision')

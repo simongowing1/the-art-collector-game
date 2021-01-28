@@ -4,8 +4,7 @@
 }
 
 body{
-    font-family: 'Georgia', Times, serif;
-    
+    font-family: 'Georgia', Times, serif;  
 }
 
 .hidden {
@@ -41,8 +40,9 @@ body{
     box-shadow: 0 2px 0 rgb(0 0 0 / 10%);
 }
 
-.instructions h2 {
+.instructions h3 {
     text-align: right;
+    color: #db3334;
 }
 
 .instructions p {
@@ -89,9 +89,9 @@ body{
 }
 
 .button {
-    background-color: lightgray;
-  border: none;
-  color: darkgray;
+    background-color: white;
+    border: 2px solid #db3334;
+  color: #db3334;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -99,6 +99,11 @@ body{
   font-size: 16px;
   border-radius: 3px;
 }
+
+.button:hover {
+    background-color:#db3334; 
+    color: white;
+  }
 
 .footer {
     display:flex;

@@ -1,6 +1,6 @@
 
 let counter = 0
-let remainingTime = 60
+let remainingTime = 10
 let countdown = document.getElementById("countdown");
     
 function secondsToMinutes(seconds) {
@@ -9,9 +9,13 @@ function secondsToMinutes(seconds) {
         return `${nf(min,2)}:${nf(sec,2)}`
     }
 
-function change_page(){
-        window.location.href = "results.html";
+function change_page_winner(){
+        window.location.href = "winner.html";
     } 
+
+function change_page_loser(){
+        window.location.href = "loser.html";
+}
 
 //let interval = setInterval(timeIt, 1000);
 
@@ -34,7 +38,11 @@ function change_page(){
                     //timesupHtml.classList.remove("hidden");
                     localStorage.setItem("score", game.player.score);
                     game.backgroundMusic.stop();
-                    change_page();
+                    if (game.player.score >= 25){
+                        change_page_winner()
+                    } else {
+                        change_page_loser()
+                    }
                 } 
                 
                

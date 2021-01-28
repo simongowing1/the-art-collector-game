@@ -1,5 +1,5 @@
 let counter = 0
-let remainingTime = 90
+let remainingTime = 10
 let countdown = document.getElementById("countdown");
 
     

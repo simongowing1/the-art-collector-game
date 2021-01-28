@@ -1,7 +1,7 @@
-let counter = 0
-let remainingTime = 10
-let countdown = document.getElementById("countdown");
 
+let counter = 0
+let remainingTime = 60
+let countdown = document.getElementById("countdown");
     
 function secondsToMinutes(seconds) {
         let min = floor(seconds / 60);
@@ -9,12 +9,16 @@ function secondsToMinutes(seconds) {
         return `${nf(min,2)}:${nf(sec,2)}`
     }
 
+function change_page(){
+        window.location.href = "results.html";
+    } 
+
 //let interval = setInterval(timeIt, 1000);
 
             function timeIt() {
                 let timesupHtml = document.querySelector(".timesup");
                 let scoreboard = document.querySelector(".scoreboard")
-                let finalScoreboard = document.getElementById("finalScoreboard");
+                
                 //console.log(scoreboard)
         
                 counter++;
@@ -25,15 +29,12 @@ function secondsToMinutes(seconds) {
                 countdown.innerHTML = `Countdown: ${secondsToMinutes(remainingTime - counter)}`;
         
                 if (counter === remainingTime) {
-                    canvasHtml.classList.add("hidden");
-                    scoreboard.classList.add("hidden");
-                    timesupHtml.classList.remove("hidden");
+                    //canvasHtml.classList.add("hidden");
+                    //scoreboard.classList.add("hidden");
+                    //timesupHtml.classList.remove("hidden");
+                    localStorage.setItem("score", game.player.score);
                     game.backgroundMusic.stop();
-                    if (game.player.score >= 25){
-                        finalScoreboard.innerHTML = `TIMES UP! <br> Congratulations, you have built a collection worth $${game.player.score},000,000!`;
-                    } else {
-                        finalScoreboard.innerHTML =`TIMES UP! Better luck next time`
-                    }
+                    change_page();
                 } 
                 
                

@@ -28,6 +28,10 @@ class Game {
         this.breakingSound = createAudio('assets/breaking.m4a')
     }
     
+    gamelogic() {
+        if (counter === remainingTime) {}
+    }
+
     draw() {
         clear(); 
         this.background.draw();

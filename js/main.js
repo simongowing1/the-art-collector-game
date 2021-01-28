@@ -37,13 +37,10 @@ function keyPressed() {
     }
 
     if (keyCode === 13) {
-        let timesupHtml = document.querySelector(".timesup");
+        //let timesupHtml = document.querySelector(".timesup");
         let interval = setInterval(timeIt, 1000);
-
-       if (timesupHtml.classList.contains("hidden")){
-            canvasHtml.classList.remove("hidden");
-            game.backgroundMusic.play();     
-       }
+        canvasHtml.classList.remove("hidden");
+            game.backgroundMusic.play();
     
     if (keyCode === 27) {
         window.location.reload()

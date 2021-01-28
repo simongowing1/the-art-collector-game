@@ -12,35 +12,51 @@
   </head>
 
   <body >
-      <div >
-        <h1>The Art Collector game</h1>
-        <p>Collect all the art as fast as you can!</p>
+    <div>
+      <div class="masthead">
+        <img class="img" src="assets/The-Art-Collector-masthead.png" alt="The Art Collector The-Art-Collector-masthead" width="500">
+      </div>
+  
+      <div class="subtitle">
+        <h2>Collect all the art as fast as you can!</h2>
+      </div>
+  
+      <div class="instructions">
         <p>Add value to your collection by grabbing the paintings. <br>
           But make sure you don't knock over the sculptures!</p>
         <p>Press return &#8629 to start!  </p>
         </p>
-        <div class="scoreboard">
-          <p id="score">Collection Value: $0.00</p>
-          <p id="countdown">Countdown: 00:00</p>
+      </div>
+  
+      <div class="scoreboard">
+        <p id="score">Collection Value: $0.00</p>
+        <p id="countdown">Countdown: 00:00</p>
+      </div>
+  
+  
+        <div id="canvas" class ="hidden"></div>
+        <div>
+          <script src="./js/constants.js"></script>
+          <script src="./js/countdown.js"></script>   
+          <script src="./js/obstacle.js"></script>
+          <script src="./js/token.js"></script>
+          <script src="./js/background.js"></script>
+          <script src="./js/player.js"></script>
+          <script src="./js/game.js" ></script>
+          <script src="./js/main.js" ></script>
         </div>
-      </div>
-      <div id="canvas" class ="hidden"></div>
-      <div>
-        <script src="./js/constants.js"></script>
-        <script src="./js/countdown.js"></script>   
-        <script src="./js/obstacle.js"></script>
-        <script src="./js/token.js"></script>
-        <script src="./js/background.js"></script>
-        <script src="./js/player.js"></script>
-        <script src="./js/game.js" ></script>
-        <script src="./js/main.js" ></script>
-      </div>
-      <div>
-        <h2>Controls</h2>
-        <p>Spacebar jump / boost up <br>
-          &#8594 walk forward <br>
-          &#8592 walk backward <br>
-      </div>
+  
+        <div class="controls">
+          <h2>Keyboard Controls</h2>
+          <p>Spacebar jump / boost up <br>
+            &#8594 walk forward <br>
+            &#8592 walk backward <br>
+        </div>
+        <button onclick="window.location.href='index.html';">
+          Restart Game
+        </button>
+    </div>
+    
     
   </body>
   <footer>

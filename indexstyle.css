@@ -1,17 +1,59 @@
 
+* {
+    margin: 0
+}
+
 body{
-    font-family: 'Roboto', serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    font-family: 'Georgia', Times, serif;
+    
 }
 
 .hidden {
     visibility: hidden;
 }
 
-.pointsAdded {
-    color: green
+.masthead {
+    display: flex;
+    justify-content: center;
+    padding: 25px 50px 25px 50px;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 10%);
+    position: relative;
+    width: auto;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px 25px 50px;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 10%);
+}
+
+.instructions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 50px 25px 50px;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 10%);
+}
+
+.scoreboard {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px 50px 25px 50px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 50px 25px 50px;
+}
+
+#canvas {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }

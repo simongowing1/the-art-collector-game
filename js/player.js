@@ -6,7 +6,7 @@ class Player {
         this.gravity = 0.2;
         this.x = 50;
         this.y = height - (this.height + 20);
-        this.score = 26;
+        this.score = 0;
         this.image = game.playerImage; 
     }
 

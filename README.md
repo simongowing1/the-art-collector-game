@@ -11,5 +11,5 @@ I wanted the game to appear as if it was being played inside a hand-drawn cartoo
 In the characters and the props, I drew particularly from the work of Saul Steinberg who first contributed to the magazine in 1941.
 
 These were supplemented by
-[Ad Reinhardt](https://user-images.githubusercontent.com/76006710/111678536-b1e77880-8820-11eb-9776-9203c9a6a08f.jpeg)
+![Ad Reinhardt](https://user-images.githubusercontent.com/76006710/111678536-b1e77880-8820-11eb-9776-9203c9a6a08f.jpeg)
 

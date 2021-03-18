@@ -1,4 +1,4 @@
-# The Art Aollector Game
+# The Art Collector Game
 
 In this run and jump game you are an art collector who has to add value to his collection by grabbing the paintings. But make sure you don't knock over the sculptures!
 

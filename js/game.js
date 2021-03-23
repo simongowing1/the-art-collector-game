@@ -16,8 +16,8 @@ class Game {
         this.backgroundImage = [
             { src:loadImage('assets/empty_gallery_long.jpg'), x: 0, speed: 1.5}
         ]
-        this.playerImage = loadImage('assets/Player1-frnt.png');
-        this.playerImageBk = loadImage('assets/Player1_bk.png');
+        this.playerImage = loadImage('assets/Player1-walking-front.gif');
+        this.playerImageBk = loadImage('assets/Player1-walking-back.gif');
         this.tokenImage1 = loadImage('assets/token1.png');
         this.tokenImage2 = loadImage('assets/token2.png');
         this.tokenImage3 = loadImage('assets/token3.png');

@@ -28,7 +28,7 @@ class Player {
         }    
     }
 
-    draw() {
+    draw() { 
         this.velocity += this.gravity; 
         this.y += this.velocity;
        

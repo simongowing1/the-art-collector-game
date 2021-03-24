@@ -57,7 +57,7 @@ class Game {
                     return true
                 }
             })
-        
+
             this.player.draw();
 
             if (frameCount === 300 || frameCount % 1200 === 0) {
@@ -81,12 +81,7 @@ class Game {
                         return true
                     }
                 })    
-  
-
-    
-       
-
-        
+ 
 }
 
 }

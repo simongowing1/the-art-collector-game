@@ -26,7 +26,7 @@ These were supplemented by excerpts from Ad Reinhardt's 'How to Look at Art' ser
 
 ![Ad Reinhardt](https://user-images.githubusercontent.com/76006710/111678536-b1e77880-8820-11eb-9776-9203c9a6a08f.jpeg)
 
-In continuation of these references, I respectfully borrowed from the design of the New Yorker web page when divising the colouration and styling of the app.
+In continuation of these references, I respectfully borrowed from the design of the New Yorker web page when divising the colouration and styling of the app. The iconic masthead should be recognisable to most.
 
 ![400071](https://user-images.githubusercontent.com/76006710/112841261-9130e580-90a0-11eb-822e-0e645fb6c856.png)
 
